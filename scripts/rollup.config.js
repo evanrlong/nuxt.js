@@ -17,12 +17,7 @@ export default function rollupConfig ({
   replace = {},
   alias = {},
   externals = [],
-  resolve = {
-    resolveOnly: [
-      /lodash/,
-      /^((?!node_modules).)*$/
-    ]
-  },
+  resolve = {},
   ...options
 }, pkg) {
   if (!pkg) {
